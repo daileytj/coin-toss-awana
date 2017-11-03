@@ -37,6 +37,14 @@ $(".flip").on('click', function() {
     setTimeout(function() {
       $('#coin').addClass('animation1620');
     }, 100);
+    setTimeout(function(){
+      $("<audio></audio>").attr({
+      'src':'pastorBillVictory.m4a',
+      'volume':0.6,
+      'autoplay':'autoplay'
+    }).appendTo("body");
+    },2000);
   }
+
 });
 });
