@@ -40,11 +40,10 @@ $(".flip").on('click', function() {
     setTimeout(function(){
       $("<audio></audio>").attr({
       'src':'pastorBillVictory.m4a',
-      'volume':0.6,
+      'volume':0.8,
       'autoplay':'autoplay'
     }).appendTo("body");
     },2000);
   }
-
 });
 });
