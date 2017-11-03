@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Special Elite', cursive;
+}
+
+body{
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid #616161;
+    box-shadow: 2px 2px 2px #616161;
+    position: fixed;
+}
+
+main {
+    padding: 120px 10px 10px 0;
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+}
+
+.rules{
+  display: inline-block;
+  width:33.3%;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.rules img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 120px;
+  height:120px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+p.resultText {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.coin{
+  display: block;
+  background-image: url("./heads.jpg");
+  background-size: contain;
+  margin: 120px auto 20px auto;
+  height: 160px;
+  width:160px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+/*coin flip*/
+
+#coin-flip-cont {
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+
+#coin {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  transform-style: preserve-3d;
+}
+
+#coin .front, #coin .back {
+  position:absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid white;
+}
+
+#coin .front {
+  transform: translateZ(1px);
+  border-radius: 50%;
+  background-image: url("./heads.jpg");
+  background-size: contain;
+}
+
+#coin .back {
+  transform: translateZ(-1px) rotateY(180deg);
+  border-radius: 50%;
+  background-image: url("./tails.jpg");
+  background-size: contain;
+}
+
+#coin.animation1620 {
+  -webkit-animation: rotate1620 2s linear forwards;
+  animation: rotate1620 2s linear forwards;
+}
+
+#coin.animation1800 {
+  -webkit-animation: rotate1800 2s linear forwards;
+  animation: rotate1800 2s linear forwards;
+}
+
+@-webkit-keyframes rotate1620 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1620deg); -moz-transform: rotateY(1620deg); transform: rotateY(1620deg); }
+}
+
+@keyframes rotate1620 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1620deg); -moz-transform: rotateY(1620deg); transform: rotateY(1620deg); }
+}
+
+@-webkit-keyframes rotate1800 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+}
+
+@keyframes rotate1800 {
+  from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+  to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+}
+
+/*------------*/
+
+button{
+  text-align: center;
+  margin: 220px auto 10px auto;
+  width: 200px;
+  height:50px;
+  border-radius: 5px;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+button:focus{
+  outline: none;
+}
+
+@media only screen and (max-width:780px){
+
+  header{
+    width: 100%;
+  background-color: black;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  border-bottom: 1px solid #616161;
+  box-shadow: 1px 1px 1px #616161;
+  }
+
+  main{
+    padding-top: 100px;
+  }
+
+  .rules img{
+    width: 80px;
+    height:80px;
+  }
+
+  p.resultText{
+    font-size: 30px;
+  }
+}
