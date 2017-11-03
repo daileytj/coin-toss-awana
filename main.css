@@ -145,6 +145,8 @@ button{
   font-size: 20px;
   padding: 10px;
   background-color: white;
+  background: white:
+  color: black;
 }
 
 button:focus{
@@ -177,5 +179,25 @@ button:focus{
 
   p.resultText{
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width:550px){
+
+  header{
+    width: 100%;
+  background-color: black;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #616161;
+  box-shadow: 1px 1px 1px #616161;
+  }
+
+  p.resultText{
+    font-size: 26px;
   }
 }
