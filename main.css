@@ -68,6 +68,14 @@ p.resultText {
   border-radius: 100%;
 }
 
+.heads img{
+  border: 2px solid #1dabdf;
+}
+
+.tails img{
+  border: 2px solid #900217;
+}
+
 /*coin flip*/
 
 #coin-flip-cont {
@@ -82,11 +90,18 @@ p.resultText {
   transform-style: preserve-3d;
 }
 
-#coin .front, #coin .back {
+#coin .front {
   position:absolute;
   width: 180px;
   height: 180px;
-  border: 2px solid white;
+  border: 2px solid #1dabdf;
+}
+
+#coin .back {
+  position:absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #900217;
 }
 
 #coin .front {
