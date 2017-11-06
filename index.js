@@ -1,6 +1,6 @@
 $(document).ready(function() {
 let coinFlipResult = "heads";
-
+$(".coin").css("background-image", "url(./heads.jpg)");
 
 
 const coinFlip = () => {
@@ -26,7 +26,7 @@ $(".flip").on('click', function() {
     }, 100);
     setTimeout(function(){
       $("<audio></audio>").attr({
-  		'src':'pastorRonVictory.mp3',
+  		'src':'pastorRonVictory.m4a',
   		'volume':0.6,
   		'autoplay':'autoplay'
   	}).appendTo("body");
@@ -39,7 +39,7 @@ $(".flip").on('click', function() {
     }, 100);
     setTimeout(function(){
       $("<audio></audio>").attr({
-      'src':'pastorBillVictory.mp3',
+      'src':'pastorBillVictory.m4a',
       'volume':0.8,
       'autoplay':'autoplay'
     }).appendTo("body");
