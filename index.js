@@ -39,7 +39,7 @@ $(".flip").on('click', function() {
     }, 100);
     setTimeout(function(){
       $("<audio></audio>").attr({
-      'src':'pastorBillVictory.m4a',
+      'src':'pastorRonVictory.m4a',
       'volume':0.8,
       'autoplay':'autoplay'
     }).appendTo("body");
