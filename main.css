@@ -114,7 +114,7 @@ p.resultText {
 #coin .back {
   transform: translateZ(-1px) rotateY(180deg);
   border-radius: 50%;
-  background-image: url("./tails.jpg");
+  background-image: url("./ron-tails.jpg");
   background-size: contain;
 }
 
