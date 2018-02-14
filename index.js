@@ -32,7 +32,7 @@ $(".flip").on('click', function() {
   	}).appendTo("body");
     },2000);
   } else {
-    $(".coin").css("background-image", "url(./tails.jpg)");
+    $(".coin").css("background-image", "url(./ron-tails.jpg)");
     $('#coin').removeClass();
     setTimeout(function() {
       $('#coin').addClass('animation1620');
